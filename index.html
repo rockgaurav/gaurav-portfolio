@@ -1,116 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="/style.css">
 
-    </head>
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Gaurav Srivastava</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
-            <img src="/developer.png" alt="a picture of Jane Smith smiling" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Development</h3>
-                    <p>As a software engineer I have extensive experience with Angular, JavaScript/TypeScript, and REST APIs. I build and style components used by millions of people all the time based on Test-Driven Development (TDD) to ensure the highest quality code. I am good at designing and building complete applications from scratch. I also provide in-house support for web-based dashboards and detailed written tests using Jest and its testing libraries. I work well in an Agile team and use Git to track changes. I am part of projects that involve different teams. View the code for easy maintenance. and lead team meetings I'm all about creating powerful solutions that users love. <br>And I'm good at managing and debugging.</p>
-                </div> <!-- / service -->
-                
-            </div> <!-- / services -->
-            
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Developer</p>
-           
-           <div class="about-me__body">
-               <p>A Web Developer with 3.1 years of experience specializing in Angular, React, HTML5, JavaScript/TypeScript, and front
-                end development. Have adequate knowledge of Generative AI to use and build dynamic apps. 
-                Collaborating with teams to build high-quality websites and identify opportunities to enhance the user experience. </p>
-           </div>
-           
-           <img src="/sitting-developer.png" alt="Jane leaning against a bus" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
-            <div class="section__experience">
-                <div class="experience__card" style="width: 18rem;">
-                    <img src="/sd.png" class="experience__img" alt="Florida">
-                    <div class="card-body">
-                      <h3 class="experience__card--title">Florida Software Solutions </h3>
-                      <p class="experience__card--text">I worked on front-end development using Angular, JavaScript/TypeScript, and REST APIs, creating styled components used by over a million users. I followed TDD practices, collaborated with teams using Git and Agile methodologies, reviewed code for quality, and handled debugging, defect fixes, and documentation.</p>
-                    </div>
-                  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJane Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-                  <div class="experience__card" style="width: 18rem;">
-                    <img src="/software-developer-2.png" class="experience__img" alt="Tavant">
-                    <div class="card-body">
-                      <h3 class="experience__card--title">Tavant Technologies</h3>
-                      <p class="experience__card--text">Developed a mortgage dashboard web app using Angular16, JavaScript/TypeScript, with robust testing using Jest and Testing Library. Provided real-time support, collaborated in Agile teams, and contributed to organizational tasks like moderating weekly dev meetings</p>
-                    </div>
-                  </div>
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Gaurav Srivastava</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
+        <img src="/developer.png" alt="a picture of Jane Smith smiling" class="intro__img">
+    </section>
+
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Development</h3>
+                <p>As a software engineer I have extensive experience with Angular, JavaScript/TypeScript, and REST APIs
+                    React, Redux, JSON. I build and style components used by millions of people all the time based on
+                    Test-Driven Development (TDD) to ensure the highest quality code. I am good at designing and
+                    building complete applications from scratch. I also provide in-house support for web-based
+                    dashboards and detailed written tests using Jest and its testing libraries. I work well in an Agile
+                    team and use Git to track changes. I am part of projects that involve different teams. View the code
+                    for easy maintenance. and lead team meetings I'm all about creating powerful solutions that users
+                    love. <br>And I'm good at managing and debugging.</p>
+            </div> <!-- / service -->
+
+        </div> <!-- / services -->
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Developer</p>
+
+        <div class="about-me__body">
+            <p>A Web Developer with specializing in Angular, React, HTML5,
+                JavaScript/TypeScript, React, Redux, JSON and front end development. Have adequate knowledge of
+                Generative AI to use and build dynamic apps.
+                Collaborating with teams to build high-quality websites and identify opportunities to enhance the user
+                experience. </p>
+        </div>
+
+        <img src="/sitting-developer.png" alt="Jane leaning against a bus" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="section__experience">
+            <div class="experience__card" style="width: 18rem;">
+                <img src="/sd.png" class="experience__img" alt="Florida">
+                <div class="card-body">
+                    <h3 class="experience__card--title">Florida Software Solutions </h3>
+                    <p class="experience__card--text">I worked on front-end development using Angular,
+                        JavaScript/TypeScript, and REST APIs, creating styled components used by over a million users. I
+                        followed TDD practices, collaborated with teams using Git and Agile methodologies, reviewed code
+                        for quality, and handled debugging, defect fixes, and documentation.</p>
+                </div>
             </div>
-        </section>
-        <!-- My work end -->
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:gauravsrivastava231989@gmail.com " class="footer__link section__title section__title--mail">gauravsrivastava231989@gmail.com </a>
-            <!-- Skills -->
-            <div class="container mt-4 section__title section__title--skills" id="skills">
-                <h4 class="skill__tags">Skills</h4>
-                <span class="btn">JavaScript</span>
-                <span class="btn">Angular</span>
-                <span class="btn">Bootstrap</span>
-                <span class="btn">TypeScript</span>
-                <span class="btn">REST API</span>
-            </div>
-        </footer>
 
-        
-        
-        <script src="/index.js"></script>
-    </body>
+            <div class="experience__card" style="width: 18rem;">
+                <img src="/software-developer-2.png" class="experience__img" alt="Tavant">
+                <div class="card-body">
+                    <h3 class="experience__card--title">Tavant Technologies</h3>
+                    <p class="experience__card--text">Developed a mortgage dashboard web app using Angular16,
+                        JavaScript/TypeScript, with robust testing using Jest and Testing Library. Provided real-time
+                        support, collaborated in Agile teams, and contributed to organizational tasks like moderating
+                        weekly dev meetings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My work end -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:gauravsrivastava231989@gmail.com "
+            class="footer__link section__title section__title--mail">gauravsrivastava231989@gmail.com </a>
+        <!-- Skills -->
+        <div class="container mt-4 section__title section__title--skills" id="skills">
+            <h4 class="skill__tags">Skills</h4>
+            <span class="btn">JavaScript</span>
+            <span class="btn">Angular</span>
+            <span class="btn">React</span>
+            <span class="btn">Bootstrap</span>
+            <span class="btn">TypeScript</span>
+            <span class="btn">REST API</span>
+            <span class="btn">Python</span>
+            <span class="btn">SQL</span>
+            <span class="btn">Power BI</span>
+            <span class="btn">Tableau</span>
+        </div>
+    </footer>
+
+
+
+    <script src="/index.js"></script>
+</body>
+
 </html>
